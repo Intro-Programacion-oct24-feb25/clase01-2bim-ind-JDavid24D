@@ -16,6 +16,18 @@ public class Ejercicio002 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
         
+        double farenheit;
+        double celcius;
+        int i = 0;
+        
+        for (farenheit = 20; farenheit <= 100; farenheit +=4){
+            celcius = (5./9.)*(farenheit-32);
+            
+            System.out.printf("Operacion(%d) Farenheit: %.2f ===> Celcius: %.2f\n",
+                    i, farenheit, celcius);
+            
+            i++;
+        }
    } 
 }
 
