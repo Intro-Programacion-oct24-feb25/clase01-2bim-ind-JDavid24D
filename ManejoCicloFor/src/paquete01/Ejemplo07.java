@@ -12,7 +12,6 @@ package paquete01;
 public class Ejemplo07 {
     public static void main(String[] args) {
         int operacion;
-        int suma;
         String mensajeFinal = "";
         String mensajeFinal2 = "";
         for (int i = 1; i <= 10; i++) { // for 01
@@ -26,9 +25,9 @@ public class Ejemplo07 {
                 // System.out.printf("%d x %d = %d\n", i, contador, operacion);
                 mensajeFinal = String.format("%s%d x %d = %d\n", 
                         mensajeFinal, i, contador, operacion);
-                suma = i + contador;
+                operacion = i + contador;
                 mensajeFinal2 = String.format("%s%d + %d = %d\n", 
-                        mensajeFinal2, i, contador, suma);
+                        mensajeFinal2, i, contador, operacion);
             }
             // System.out.println("\n");
             mensajeFinal = String.format("%s\n", mensajeFinal);
