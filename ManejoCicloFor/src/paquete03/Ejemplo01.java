@@ -15,9 +15,22 @@ public class Ejemplo01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        for (int i = 0; i < 10; i++) {
-            System.out.printf("%d", i);
+        int suma1;
+        int suma2;
+        int suma3;
+        String cadena = "";
+        
+        for (int i = 30; i <= 10; i--) {
+            
+            suma1 = i + i;
+            suma2 = suma1 + i;
+            suma3 = suma2 + i;
+            
+            cadena = String.format("hola%s-%d-%d-%d-%d\n", cadena, i, suma1, 
+                    suma2, suma3);
+            System.out.printf("%s",cadena);
         }
+        
 
         // System.out.printf("%d\n", i);
 

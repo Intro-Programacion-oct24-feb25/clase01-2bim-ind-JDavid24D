@@ -16,16 +16,18 @@ public class Ejercicio01 {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
        
-        int suma1 = 0;
-        int suma2 = 0;
-        int suma3 = 0;
+        int suma1;
+        int suma2;
+        int suma3;
         String cadena = "";
         
-        for (int i = 30; i <= 10; i--) {
-            suma1 = i + 30;
-            suma2 = suma1 + 30;
-            suma3 = suma2 + 30;
-            cadena = String.format("%s-%d-%d-%d-%d", cadena, i, suma1, suma2, suma3);
+        for (int i = 30; i >= 10; i--) {
+            
+            suma1 = i + i;
+            suma2 = suma1 + i;
+            suma3 = suma2 + i;
+            
+            cadena = String.format("%s%d-%d-%d-%d\n", cadena, i, suma1, suma2, suma3);
         }
         System.out.printf("%s",cadena);
     }
